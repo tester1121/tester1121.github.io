@@ -3,12 +3,12 @@ li {
   margin: 0 2vw;
   text-size: 20px;
   text-weight: normal;
+  font-size: 3vh;
 }
 
 a {
   text-decoration: none;
   color: black;
-  padding: 2vw;
 }
 
 nav {

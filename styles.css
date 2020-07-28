@@ -12,6 +12,7 @@ body {
   topnav {
     background-color: #333333;
     overflow: hidden;
+    font-size: 32px;
   }
 
   topnav a {
@@ -25,12 +26,12 @@ body {
 
   topnav a:hover {
     background-color: #dddddd;
-    color: black;
+    color: "black";
   }
 
   topnav a.active {
     background-color: #4CAF50;
-    color: white;
+    color: "white";
   }
 }
 

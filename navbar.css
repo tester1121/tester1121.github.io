@@ -18,6 +18,8 @@ a:hover {
 nav {
   width: 100vw;
   background-color: #D6EFFF;
+  position: fixed;
+  top: 0px;
 }
 
 

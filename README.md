@@ -2,7 +2,7 @@
 
 Hello, and welcome to my website's repository!
 
-Website status: `Online, development mode`
+Website status: `Online`
 
 Status of development: [Viewable here.](https://github.com/tester1121/tester1121.github.io/projects/1)
 

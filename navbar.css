@@ -1,1 +1,22 @@
+li {
+  list-style-type: none;
+}
 
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 100vw;
+  background-color: #D6EFFF;
+}
+
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+}

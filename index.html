@@ -14,77 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="navbar.css">
     <!-- Lighthouse mobile tests - Size of display -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      /* Navbar. */
-      nav li {
-        list-style-type: none;
-        margin: 0 2vw;
-        text-size: 20px;
-        text-weight: normal;
-        font-size: 3vh;
-        display: block;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: black;
-      }
-
-      nav a:hover {
-        background-color: #6d87fc;
-      }
-
-      nav {
-        width: 100vw;
-        background-color: #0074cc;
-        position: fixed;
-        top: 0px;
-      }
-
-
-      nav ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-
-      body {
-        margin: 0;
-        padding-top: 32px;
-      }
-
-      nav button {
-        display: none;
-      }
-
-      @media only screen and (max-width: 500px) {
-        nav ul {
-          flex-direction: column;
-        }
-  
-        nav li {
-          margin: 0;
-          display: none;
-        }
-  
-        nav a {
-          display: block;
-        }
-  
-        nav button {
-          display: block;
-          padding: 2vw;
-          font-size: 3vh;
-          background-color: #0074cc;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          align-self: flex-start;
-        }
-      }
-    </style>
   </head>
   <body>
     <nav>

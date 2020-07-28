@@ -9,7 +9,6 @@ li {
 nav a {
   text-decoration: none;
   color: black;
-  padding: 2vw;
 }
 
 nav a:hover {
@@ -32,4 +31,5 @@ ul {
 
 body {
   margin: 0;
+  padding-top: 65px;
 }

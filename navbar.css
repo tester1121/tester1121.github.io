@@ -1,6 +1,8 @@
 li {
   list-style-type: none;
   margin: 0 2vw;
+  text-size: 20px;
+  text-weight: normal;
 }
 
 a {
@@ -10,7 +12,6 @@ a {
 nav {
   width: 100vw;
   background-color: #D6EFFF;
-  text-size: 20px;
 }
 
 

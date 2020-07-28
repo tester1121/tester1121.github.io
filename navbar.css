@@ -1,9 +1,10 @@
-li {
+nav li {
   list-style-type: none;
   margin: 0 2vw;
   text-size: 20px;
   text-weight: normal;
   font-size: 3vh;
+  display: none;
 }
 
 nav a {
@@ -23,7 +24,7 @@ nav {
 }
 
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -34,24 +35,24 @@ body {
   padding-top: 32px;
 }
 
-button {
+nav button {
   display: none;
 }
 
 @media only screen and (max-width: 500px) {
-  ul {
+  nav ul {
     flex-direction: column;
   }
   
-  li {
+  nav li {
     margin: 0;
   }
   
-  a {
+  nav a {
     display: block;
   }
   
-  button {
+  nav button {
     display: block;
     padding: 2vw;
     font-size: 3vh;

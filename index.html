@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       /* Navbar. */
-      .nav .li {
+      .nav li {
         list-style-type: none;
         margin: 0 2vw;
         text-size: 20px;
@@ -27,12 +27,12 @@
         display: block;
       }
 
-      .nav .a {
+      .nav a {
         text-decoration: none;
         color: black;
       }
 
-      .nav .a:hover {
+      .nav a:hover {
         background-color: #6d87fc;
       }
 
@@ -44,36 +44,36 @@
       }
 
 
-      .nav .ul {
+      .nav ul {
         margin: 0;
         padding: 0;
         display: flex;
       }
 
-      .body {
+      body {
         margin: 0;
         padding-top: 32px;
       }
 
-      .nav .button {
+      .nav button {
         display: none;
       }
 
       @media only screen and (max-width: 500px) {
-        .nav .ul {
+        .nav ul {
           flex-direction: column;
         }
   
-        .nav .li {
+        .nav li {
           margin: 0;
           display: none;
         }
   
-        nav .a {
+        nav a {
           display: block;
         }
   
-        .nav .button {
+        .nav button {
           display: block;
           padding: 2vw;
           font-size: 3vh;

@@ -59,5 +59,6 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    align-self: flex-start;
   }
 }

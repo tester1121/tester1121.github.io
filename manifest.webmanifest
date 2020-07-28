@@ -1,0 +1,23 @@
+{
+  "short_name": "tester1121",
+  "name": "tester1121's Website",
+  "description": "tester1121's Website.",
+  "icons": [
+    {
+      "src": "icons/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#00cbcc",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#00cbcc",
+  "shortcuts": [{}]
+}

@@ -12,7 +12,7 @@
     <meta name="keywords" content="tester1121">
     <meta name="author" content="tester1121">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonst CSS -->
+    <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f6090b363.js" crossorigin="anonymous"></script>
     <script>
@@ -135,18 +135,16 @@
     <nav>
       <ul>
         <button> <i class="fas fa-bars"></i> </button>
-        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#server">1121's Discord Server</a></li>
         <li><a href="#bot">1121's Discord Bot</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#social">Social Media</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
       </ul>
     </nav>
     <strong><p>tester1121</p></strong>
     <p>Welcome to my website!</p>
-    <p>Join my Discord server <a href="https://discord.com/widget?id=727576292630724708&theme=dark">here!</a></p>
     <!-- JQuery code -->
     <script>
       $(document).ready(function(){
@@ -155,8 +153,12 @@
         });
       });
     </script>
-    <script>
-      /* Key response code to be added */
+    <script type="module">
+      /* Key response code */
+      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
+      for (const el of document.querySelectorAll('[data-hotkey]')) {
+        install(el)
+      }
     </script>
     <footer>
       <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
@@ -165,6 +167,7 @@
       <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
       <p>Website status: <code>Online.</code></p>
       <p>Last updated on <code>July 28, 2020.</code></p>
+      <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
     </footer>
   </body>
 </html>

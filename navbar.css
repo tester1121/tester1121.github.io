@@ -11,7 +11,7 @@ a {
   color: black;
 }
 
-a:hover {
+nav a:hover {
    background-color: #C6E9FF;
 }
 

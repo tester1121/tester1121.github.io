@@ -34,9 +34,24 @@
     <p>Join my Discord server!</p>
     <iframe src="https://discord.com/widget?id=727576292630724708&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     <hr style="height:2px; border-width:0; color:black; background-color:black;">
+    <!-- JQuery installation -->
+    <script src="jquery-3.4.0.min.js"></script>
+    <!-- JQuery code -->
     <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          if($("button").text() == "☰"){
+            $("button").text("🞬");
+          } else {
+            $("button").text("☰");
+          }
+          $("li").toggle("slow");
+        });
+      });
     </script>
-    <!-- Key response code to be added in <script></script>. -->
+    <script>
+      /* Key response code to be added */
+    </script>
     <footer>
       <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
       <p>Discord: 1121#1063</p>

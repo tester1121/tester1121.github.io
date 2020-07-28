@@ -27,16 +27,16 @@
         display: block;
       }
 
-      nav a {
+      .nav a {
         text-decoration: none;
         color: black;
       }
 
-      nav a:hover {
+      .nav a:hover {
         background-color: #6d87fc;
       }
 
-      nav {
+      .nav {
         width: 100vw;
         background-color: #0074cc;
         position: fixed;
@@ -44,27 +44,27 @@
       }
 
 
-      nav ul {
+      .nav ul {
         margin: 0;
         padding: 0;
         display: flex;
       }
 
-      body {
+      .body {
         margin: 0;
         padding-top: 32px;
       }
 
-      nav button {
+      .nav button {
         display: none;
       }
 
       @media only screen and (max-width: 500px) {
-        nav ul {
+        .nav ul {
           flex-direction: column;
         }
   
-        nav li {
+        .nav li {
           margin: 0;
           display: none;
         }
@@ -73,7 +73,7 @@
           display: block;
         }
   
-        nav button {
+        .nav button {
           display: block;
           padding: 2vw;
           font-size: 3vh;

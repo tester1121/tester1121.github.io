@@ -179,12 +179,25 @@
     </script>
     <script>
       /* App Installation Prompt */
-      function installApp() {
-        showInstallPromotion();
-      }
+      var deferredPrompt; 
+      window.addEventListener(
+        'beforeinstallprompt', function (e) { 
+          deferredPrompt = e; showAddToHomeScreen(); 
+        });
+      
+       function addToHomeScreen() { 
+         deferredPrompt.prompt(); 
+         deferredPrompt.userChoice.then(function(choiceResult){
+           if (choiceResult.outcome === 'accepted') {
+             console.log('User accepted the A2HS prompt'); 
+           } else {
+             console.log('User dismissed the A2HS prompt'); 
+           } deferredPrompt = null; 
+         }); 
+       } 
     </script>
     <footer>
-      <p style="font-size: 32px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="installApp();">Install the app!</a></p>
+      <p style="font-size: 32px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
       <p> </p>
       <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
       <p>Discord: 1121#1063</p>

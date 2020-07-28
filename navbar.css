@@ -13,12 +13,12 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #C6E9FF;
+   background-color: #6d87fc;
 }
 
 nav {
   width: 100vw;
-  background-color: #D6EFFF;
+  background-color: #0074cc;
   position: fixed;
   top: 0px;
 }
@@ -57,7 +57,7 @@ nav button {
     display: block;
     padding: 2vw;
     font-size: 3vh;
-    background-color: #AFE0FF;
+    background-color: #0074cc;
     border: none;
     outline: none;
     cursor: pointer;

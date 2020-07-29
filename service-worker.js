@@ -6,6 +6,7 @@ var urlsToCache = [
   'index.html',
   'service-worker.js',
   'server.html',
+  'social.html',
   'about.html'
 ];
 

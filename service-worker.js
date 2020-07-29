@@ -7,6 +7,7 @@ var urlsToCache = [
   'service-worker.js',
   'manifest.webmanifest',
   'server.html',
+  'downloads.html',
   'social.html',
   'about.html'
 ];

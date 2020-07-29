@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>tester1121 | Home</title>
+    <!-- Favicons. -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" href="icons/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <!-- Meta code. -->
+    <meta charset="UTF-8">
+    <meta name="description" content="tester1121's Website">
+    <meta name="keywords" content="tester1121">
+    <meta name="author" content="tester1121">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- GitHub Primer CSS -->
+    <link href="css/github.css" rel="stylesheet">
+    <!-- Font Awesome: <script src="https://kit.fontawesome.com/9f6090b363.js" crossorigin="anonymous"></script> -->
+    <!-- Theme color -->
+    <meta name="theme-color" content="#00cbcc"/>
+    <!-- Search -->
+    <meta name="google-site-verification" content="qmp--IjOxc8c9rdg-BdNlrfB8J4kVPbWRRDF8QD8GCI" />
+    <style>
+      /* No navbar. */
+
+      /* Scrollbar */
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #00cbcc;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #008687;
+        border-radius: 10px;
+        transition: 0.4s;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #04b83d;
+      }
+
+      /* General */
+
+
+      html {
+        font-family: 'Recursive', sans-serif;
+        color: #000000;
+        background-color: #00cbcc;
+        text-align: center;
+      }
+
+      body {
+        font-size: 49px;
+        font-weight: normal;
+      }
+
+      footer {
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      h1 {
+        font-size: 49px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Website Stats</h1>
+    <h3>WARNING: This webpage is NOT saved for offline viewage. These statistics can change at any time.</h3>
+    <div class="tooltipped tooltipped-n" aria-label="JS + PWA + Lighthouse audits + CSS - Done
+    Pages - 27% left.">
+      <span class="text-small text-gray mr-2">27% left</span>
+      <span class="Progress d-inline-flex" style="width: 400px">
+        <span class="Progress-item bg-yellow" style="width: 40%;"></span> <!-- Pages -->
+        <span class="Progress-item bg-purple" style="width: 25%;"></span> <!-- CSS -->
+        <span class="Progress-item bg-pink" style="width: 15%;"></span> <!-- Lighthouse -->
+        <span class="Progress-item bg-red" style="width: 5%;"></span> <!-- PWA -->
+        <span class="Progress-item bg-green" style="width: 5%;"></span> <!-- JS -->
+      </span>
+    </div>
+    <p></p>
+    <p>More explained version:</p>
+    <div class="tooltipped tooltipped-n" aria-label="CSS + Lighthouse audits + PWA + JS - Done">
+      <span class="text-small text-gray mr-2">Done</span>
+      <span class="Progress d-inline-flex" style="width: 160px">
+        <span class="Progress-item bg-green" style="width: 100%;"></span>
+      </span>
+    </div>
+    <div class="tooltipped tooltipped-n" aria-label="Pages - 6 of 7">
+      <span class="text-small text-gray mr-2">6 of 7</span>
+      <span class="Progress d-inline-flex" style="width: 160px">
+        <span class="Progress-item bg-blue" style="width: 85.2%;"></span>
+      </span>
+    </div>
+    <script>
+      /* Key response code */
+      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
+      for (const el of document.querySelectorAll('[data-hotkey]')) {
+        install(el)
+      }
+    </script>
+    <footer>
+      <p>Click h m to go to the home <a href="/" style="color: black; text-decoration: none;" data-hotkey="h m">page.</a></p>
+    </footer>
+  </body>
+</html>

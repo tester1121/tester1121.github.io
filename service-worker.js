@@ -3,13 +3,14 @@ var urlsToCache = [
   'icons/apple-touch.png',
   'icons/favicon.ico',
   'icons/favicon.png',
-  'index.html',
   'service-worker.js',
   'manifest.webmanifest',
+  'index.html',
   'server.html',
   'downloads.html',
   'social.html',
-  'about.html'
+  'about.html',
+  '404.html'
 ];
 
 self.addEventListener('install', function(event) {

@@ -5,7 +5,8 @@ var urlsToCache = [
   'icons/favicon.png',
   'index.html',
   'service-worker.js',
-  'server.html'
+  'server.html',
+  'about.html'
 ];
 
 self.addEventListener('install', function(event) {

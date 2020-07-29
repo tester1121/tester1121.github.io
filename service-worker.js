@@ -5,7 +5,9 @@ var urlsToCache = [
   'icons/favicon.png',
   'index.html',
   'service-worker.js',
+  'manifest.webmanifest',
   'server.html',
+  'social.html',
   'about.html'
 ];
 

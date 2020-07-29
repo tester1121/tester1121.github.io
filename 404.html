@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>tester1121 | Home</title>
+    <!-- Favicons. -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" href="icons/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <!-- Meta code. -->
+    <meta charset="UTF-8">
+    <meta name="description" content="tester1121's Website">
+    <meta name="keywords" content="tester1121">
+    <meta name="author" content="tester1121">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome: <script src="https://kit.fontawesome.com/9f6090b363.js" crossorigin="anonymous"></script> -->
+    <!-- Webmanifest link -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    <!-- Theme color -->
+    <meta name="theme-color" content="#00cbcc"/>
+    <style>
+      /* No navbar for 404 */
+      /* Scrollbar */
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #00cbcc;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #008687;
+        border-radius: 10px;
+        transition: 0.4s;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #04b83d;
+      }
+
+      /* General */
+
+
+      html {
+        font-family: 'Recursive', sans-serif;
+        color: #000000;
+        background-color: #00cbcc;
+        text-align: center;
+      }
+
+      body {
+        font-size: 49px;
+        font-weight: normal;
+      }
+
+      footer {
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      h1 {
+        font-size: 49px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <strong><h1>404</h1></strong>
+    <p>This page is not made or does not exist!</p>
+    <p>Please make an issue for a bug <a style="color: black; text-decoration: none;"href="https://github.com/tester1121/tester1121.github.io/issues/new?assignees=&labels=bug&template=bug_report.md&title=" data-hotkey="f i">by clicking f i.</a></p>
+    <!-- Spacing -->
+    <p></p>
+    <a style="color: black; text-decoration: none;" href="/" data-hotkey"h 5">Click <kbd>h 5</kbd> to go to the home page.</a>
+    <!-- No JQuery because no navbar on 404. -->
+    <script type="module">
+      /* Key response code */
+      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
+      for (const el of document.querySelectorAll('[data-hotkey]')) {
+        install(el)
+      }
+
+      /* Replacement
+
+      import {install} from '@github/hotkey'
+
+      // Install all the hotkeys on the page
+      for (const el of document.querySelectorAll('[data-hotkey]')) {
+        install(el)
+      }
+
+      */
+    </script>
+    <script>
+      /* Service worker */
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+    <!-- No app installation prompt for 404 page. -->
+    <footer>
+      <p style="font-size: 29px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
+      <p> </p>
+      <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
+      <p>Discord: 1121#1063</p>
+      <p>Youtube: <code>PRIVATE</code></p>
+      <p>GitHub: <a href="https://github.com/tester1121">@tester1121</p>
+      <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
+      <p>Website status: <code>Online.</code></p>
+      <p>Last updated on <code>July 28, 2020.</code></p>
+      <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
+    </footer>
+  </body>
+</html>

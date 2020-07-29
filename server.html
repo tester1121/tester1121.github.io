@@ -25,7 +25,7 @@
     </script>
     <style>
       /* Navbar. */
-      
+
       nav li {
         list-style-type: none;
         margin: 0 2vw;
@@ -71,16 +71,16 @@
         nav ul {
           flex-direction: column;
         }
-  
+
         nav li {
           margin: 0;
           display: none;
         }
-  
+
         nav a {
           display: block;
         }
-  
+
         nav button {
           display: block;
           padding: 2vw;
@@ -92,9 +92,9 @@
           align-self: flex-start;
         }
       }
-      
+
       /* Scrollbar */
-      
+
       ::-webkit-scrollbar {
         width: 10px;
       }
@@ -104,18 +104,18 @@
       }
 
       ::-webkit-scrollbar-thumb {
-        background: #008687; 
+        background: #008687;
         border-radius: 10px;
         transition: 0.4s;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #04b83d; 
+        background: #04b83d;
       }
-      
+
       /* General */
-      
-      
+
+
       html {
         font-family: 'Recursive', sans-serif;
         color: #000000;
@@ -132,15 +132,15 @@
         font-size: 13px;
         font-weight: 300;
       }
-      
+
     </style>
   </head>
   <body>
     <nav>
       <button> ☰ <!-- Font Awesome bars: <i class="fas fa-bars"></i> --></button>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#server">1121's Discord Server</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">1121's Discord Server</a></li>
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#social">Social Media</a></li>
         <li><a href="#about">About Me</a></li>
@@ -179,25 +179,25 @@
     </script>
     <script>
       /* App Installation Prompt */
-      var deferredPrompt; 
+      var deferredPrompt;
       window.addEventListener(
-        'beforeinstallprompt', function (e) { 
-          deferredPrompt = e; 
+        'beforeinstallprompt', function (e) {
+          deferredPrompt = e;
         });
-      
-       function addToHomeScreen() { 
-         deferredPrompt.prompt(); 
+
+       function addToHomeScreen() {
+         deferredPrompt.prompt();
          deferredPrompt.userChoice.then(function(choiceResult){
            if (choiceResult.outcome === 'accepted') {
-             console.log('User accepted the A2HS prompt'); 
+             console.log('User accepted the A2HS prompt');
            } else {
-             console.log('User dismissed the A2HS prompt'); 
-           } deferredPrompt = null; 
-         }); 
-       } 
+             console.log('User dismissed the A2HS prompt');
+           } deferredPrompt = null;
+         });
+       }
     </script>
     <footer>
-      <p style="font-size: 32px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
+      <p style="font-size: 29px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
       <p> </p>
       <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
       <p>Discord: 1121#1063</p>

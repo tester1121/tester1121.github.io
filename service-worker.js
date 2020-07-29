@@ -1,3 +1,7 @@
+/*
+
+Disabled for updates.
+
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
   'icons/apple-touch.png',
@@ -74,3 +78,5 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+
+*/

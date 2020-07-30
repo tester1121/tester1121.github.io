@@ -1,3 +1,5 @@
+/* Navbar. */
+
 .gen nav li {
   list-style-type: none;
   margin: 0 2vw;
@@ -63,4 +65,56 @@ body .gen {
     cursor: pointer;
     align-self: flex-start;
   }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00cbcc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008687;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #04b83d;
+}
+
+/* General */
+
+
+html body .gen {
+  font-family: 'Recursive', sans-serif;
+  color: #000000;
+  background-color: #00cbcc;
+  text-align: center;
+}
+
+body .gen {
+  font-size: 49px;
+  font-weight: normal;
+}
+
+.gen .text p {
+  padding-bottom: 30px;
+}
+
+.gen footer {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.gen h1 {
+  font-size: 49px;
+}
+
+.gen footer a {
+  color: blue;
 }

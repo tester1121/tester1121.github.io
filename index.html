@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color: #00cbcc">
   <head>
     <title>tester1121 | Home</title>
     <!-- Favicons. -->
@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Github CSS -->
+    <link href="css/github.css" rel="stylesheet">
     <!-- Font Awesome: <script src="https://kit.fontawesome.com/9f6090b363.js" crossorigin="anonymous"></script> -->
     <!-- Webmanifest link -->
     <link rel="manifest" href="/manifest.webmanifest">
@@ -28,7 +30,7 @@
     <style>
       /* Navbar. */
 
-      nav li {
+      .gen nav li {
         list-style-type: none;
         margin: 0 2vw;
         text-size: 20px;
@@ -37,16 +39,16 @@
         display: block;
       }
 
-      nav a {
+      .gen nav a {
         text-decoration: none;
         color: black;
       }
 
-      nav a:hover {
+      .gen nav a:hover {
         background-color: #6d87fc;
       }
 
-      nav {
+      .gen nav {
         width: 100vw;
         background-color: #0074cc;
         position: fixed;
@@ -54,36 +56,36 @@
       }
 
 
-      nav ul {
+      .gen nav ul {
         margin: 0;
         padding: 0;
         display: flex;
       }
 
-      body {
+      body .gen {
         margin: 0;
-        padding-top: 32px;
+        padding-top: 49px;
       }
 
-      nav button {
+      .gen nav button {
         display: none;
       }
 
       @media only screen and (max-width: 500px) {
-        nav ul {
+        .gen nav ul {
           flex-direction: column;
         }
 
-        nav li {
+        .gen nav li {
           margin: 0;
           display: none;
         }
 
-        nav a {
+        .gen nav a {
           display: block;
         }
 
-        nav button {
+        .gen nav button {
           display: block;
           padding: 2vw;
           font-size: 3vh;
@@ -118,102 +120,115 @@
       /* General */
 
 
-      html {
+      html body .gen {
         font-family: 'Recursive', sans-serif;
         color: #000000;
         background-color: #00cbcc;
         text-align: center;
       }
 
-      body {
+      body .gen {
         font-size: 49px;
         font-weight: normal;
       }
 
-      footer {
+      .gen .text p {
+        padding-bottom: 30px;
+      }
+
+      .gen footer {
         font-size: 13px;
         font-weight: 300;
       }
 
-      h1 {
+      .gen h1 {
         font-size: 49px;
+      }
+
+      .gen footer a {
+        color: blue;
       }
 
     </style>
   </head>
   <body>
-    <nav>
-      <button> ☰ <!-- Font Awesome bars: <i class="fas fa-bars"></i> --></button>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="server.html">1121's Discord Server</a></li>
-        <li><a href="downloads.html">Downloads</a></li>
-        <li><a href="social.html">Social Media</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="stats.html">Stats</a></li>
-      </ul>
-    </nav>
-    <strong><h1>tester1121</h1></strong>
-    <p>Welcome to my website!</p>
-    <!-- JQuery code -->
-    <script>
-      $(document).ready(function(){
-        $("button").click(function(){
-          $("li").toggle("slow");
-        });
-      });
-    </script>
-    <script type="module">
-      /* Key response code */
-      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
-      for (const el of document.querySelectorAll('[data-hotkey]')) {
-        install(el)
-      }
-    </script>
-    <script>
-      /* Service worker */
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
+    <div class="gen">
+        <nav>
+          <button> ☰ <!-- Font Awesome bars: <i class="fas fa-bars"></i> --></button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="server.html">1121's Discord Server</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="social.html">Social Media</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stats.html">Stats</a></li>
+        </ul>
+      </nav>
+      <div class="text">
+        <strong><h1>tester1121</h1></strong>
+        <p></p>
+        <p>Welcome to my website!</p>
+      </div>
+      <!-- JQuery code -->
+      <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("li").toggle("slow");
           });
         });
-      }
-    </script>
-    <script>
-      /* App Installation Prompt */
-      var deferredPrompt;
-      window.addEventListener(
-        'beforeinstallprompt', function (e) {
-          deferredPrompt = e;
-        });
+        </script>
+        <script type="module">
+        /* Key response code */
+        import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
+        for (const el of document.querySelectorAll('[data-hotkey]')) {
+          install(el)
+        }
+        </script>
+        <script>
+        /* Service worker */
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+            });
+          });
+        }
+        </script>
+        <script>
+        /* App Installation Prompt */
+        var deferredPrompt;
+        window.addEventListener(
+          'beforeinstallprompt', function (e) {
+            deferredPrompt = e;
+          });
 
-       function addToHomeScreen() {
-         deferredPrompt.prompt();
-         deferredPrompt.userChoice.then(function(choiceResult){
-           if (choiceResult.outcome === 'accepted') {
-             console.log('User accepted the A2HS prompt');
-           } else {
-             console.log('User dismissed the A2HS prompt');
-           } deferredPrompt = null;
-         });
-       }
-    </script>
-    <footer>
-      <p style="font-size: 29px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
-      <p> </p>
-      <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
-      <p>Discord: 1121#1063</p>
-      <p>Youtube: <code>PRIVATE</code></p>
-      <p>GitHub: <a href="https://github.com/tester1121">@tester1121</a></p>
-      <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
-      <p>Website status: <code>Online.</code></p>
-      <p>Last updated on <code>July 28, 2020.</code></p>
-      <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
-    </footer>
-  </body>
+          function addToHomeScreen() {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function(choiceResult){
+              if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+              } else {
+                console.log('User dismissed the A2HS prompt');
+              } deferredPrompt = null;
+            });
+          }
+          </script>
+          <footer>
+            <p style="font-size: 29px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
+            <p> </p>
+            <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
+            <p>Discord: 1121#1063</p>
+            <p>Youtube: <code>PRIVATE</code></p>
+            <p>GitHub: <a href="https://github.com/tester1121">@tester1121</a></p>
+            <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
+            <p>Website status: <code>Online.</code></p>
+            <p>Last updated on <code>July 28, 2020.</code></p>
+            <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
+          </footer>
+        </div>
+      </body>
 </html>

@@ -10,7 +10,8 @@ var urlsToCache = [
   'downloads.html',
   'social.html',
   'about.html',
-  '404.html'
+  '404.html',
+  'css/github.css'
 ];
 
 self.addEventListener('install', function(event) {

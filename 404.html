@@ -45,19 +45,34 @@
       }
 
       /* General */
-
+        
+      * {
+      box-sizing: border-box;
+      }
+        
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
 
       html body .gen {
         font-family: 'Recursive', sans-serif;
         color: #000000;
-        background-color: #00cbcc;
+        background: url("assets/background.png");
         text-align: center;
-      }
-
-      body .gen {
         font-size: 25px;
         font-weight: normal;
       }
+      
+      html body {
+        height: 100vh;
+        width: 100vw;
+      }
+        
+      .gen {
+        height: 100%;
+        width: 100%;
+       }
 
       .gen .text p {
         padding-bottom: 30px;

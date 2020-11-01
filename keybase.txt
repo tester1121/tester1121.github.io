@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/1121211
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tester1121.github.io
+  * I am 1121211 (https://keybase.io/1121211) on keybase.
+  * I have a public key ASArNsvQBUiGi7chAa-KZtZCJ6ttmaU38tYSqIJWWydi4Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202b36cbd00548868bb72101af8a66d64227ab6d99a537f2d612a882565b2762e10a",
+      "host": "keybase.io",
+      "kid": "01202b36cbd00548868bb72101af8a66d64227ab6d99a537f2d612a882565b2762e10a",
+      "uid": "b1ca0f6bdd794f03bbdbb2dd93887219",
+      "username": "1121211"
+    },
+    "merkle_root": {
+      "ctime": 1604265429,
+      "hash": "d9618161da7cf240a3cf9239e3770d90cdb86a033b55e6cdc5a5be9831a74bf32ed4fdba0ebbe62c58c25be11d2cd5f9d5ea43df8a9fd5a9bdd01852be5685db",
+      "hash_meta": "0c83a4e8b6815f3789620e910a3cad6fa0227f010f25a49dbc05925430ee472b",
+      "seqno": 17989353
+    },
+    "service": {
+      "entropy": "GjuXZHjCAwxzpzu7AuIGbBqX",
+      "hostname": "tester1121.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1604265459,
+  "expire_in": 504576000,
+  "prev": "979517ce918871df16e127e80cd18e9aea235766748f6440ce38b4c0eff8a60c",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKzbL0AVIhou3IQGvimbWQierbZmlN/LWEqiCVlsnYuEKp3BheWxvYWTESpcCBcQgl5UXzpGIcd8W4SfoDNGOmuojV2Z0j2RAzji0wO/4pgzEIBpEbCRsgQfXCk1X87OKP+q+k45TZ7/2U97RJFqxhwcmAgHCo3NpZ8RAdvyuSwXuGpDtSLRApwXO//xAqvLIpp3q7a9HlGJKsMhRkVVIgAscUnbTLll8DN7d3ysJQ7o9Sc22jXAeU0j/AKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGVO60MXzKeaUCYV4u+COHSHx+UOykvOGnb2LWvBMLH4o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/1121211
+
+==================================================================

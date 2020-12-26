@@ -2,13 +2,33 @@
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
-// Customize this with a different URL if needed.
 const OFFLINE_URL = "offline.html";
+var urlsToCache = [
+  '/',
+  '/index.html',
+  '/404.html',
+  '/about.html',
+  '/manifest.webmanifest',
+  '/offline.html',
+  '/server.html',
+  '/service-worker.js',
+  '/social.html',
+  '/assets/1121.cur',
+  '/assets/background.png',
+  '/icons/512x512.png',
+  '/icons/apple-touch.png',
+  '/icons/favicon.ico',
+  '/icons/favicon.png',
+  '/icons/maskable.png'
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
+      return cache.addAll(urlsToCache, { cache: "reload"});
+      // await cache.add(new Request(URL_1, { cache: "reload" }));
+
       // Setting {cache: 'reload'} in the new request will ensure that the
       // response isn't fulfilled from the HTTP cache; i.e., it will be from
       // the network.

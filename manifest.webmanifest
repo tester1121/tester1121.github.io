@@ -24,7 +24,7 @@
   ],
   "start_url": "/index.html",
   "background_color": "#00CBCC",
-  "display": "minimal-ui",
+  "display": "standalone",
   "scope": "/",
   "theme_color": "#00CBCC",
   "shortcuts": []

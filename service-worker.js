@@ -11,7 +11,8 @@ var urlsToCache = [
   'social.html',
   'about.html',
   '404.html',
-  'css/github.css'
+  'css/github.css',
+  'assets/1121.cur'
 ];
 
 self.addEventListener('install', function(event) {

@@ -91,6 +91,7 @@ body .gen {
 
 * {
   box-sizing: border-box;
+  cursor: url(assets/1121.cur), default;
 }
 
 html, body {

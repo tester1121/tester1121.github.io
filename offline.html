@@ -1,24 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" style="background-color: #00cbcc">
   <head>
-    <title>tester1121 | 404</title>
-    <!-- Favicons. -->
+    <title>Offline | tester1121</title>
     <link rel="shortcut icon" href="icons/favicon.ico">
     <link rel="icon" type="image/png" href="icons/favicon.png" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch.png">
     <meta charset="UTF-8">
-    <meta name="description" content="tester1121's Website">
-    <meta name="keywords" content="tester1121">
-    <meta name="author" content="tester1121">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link href="css/github.css" rel="stylesheet">
-    <link rel="manifest" href="/manifest.webmanifest">
-    <!-- Theme color -->
     <meta name="theme-color" content="#00cbcc"/>
-    <!-- <meta http-equiv="Cache-control" content="max-age=25200"> -->
+    <link rel="manifest" href="/manifest.webmanifest">
     <style>
-      /* No navbar for 404 */
       /* Scrollbar */
 
       ::-webkit-scrollbar {
@@ -91,27 +84,16 @@
   </head>
   <body>
     <div class="gen">
-    <div class="text">
-    <strong><h1>404</h1></strong>
-    <p>This page is not made or does not exist!</p>
-    <p>Please make an issue for a bug by clicking f <a style="color: black; text-decoration: none;" href="https://github.com/tester1121/tester1121.github.io/issues/new?assignees=&labels=bug&template=bug_report.md&title=" data-hotkey="f i">i.</a></p>
-    <p>Click h m to go to the home <a style="color: black; text-decoration: none;" href="/" data-hotkey="h m">page.</a></p>
+      <div class="text">
+        <p>You are offline.</p>
+      </div>
     </div>
-    <!-- No JQuery because no navbar on 404. -->
-    <script type="module">
-      /* Key response code */
-      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
-      for (const el of document.querySelectorAll('[data-hotkey]')) {
-        install(el)
-      }
-
-
+    <script>
       window.addEventListener("load", () => {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker.register("service-worker.js");
         }
       });
     </script>
-  </div>
   </body>
 </html>

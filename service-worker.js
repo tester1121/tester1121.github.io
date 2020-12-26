@@ -12,8 +12,7 @@ var urlsToCache = [
   'about.html',
   '404.html',
   'css/github.css',
-  'assets/1121.cur',
-  'assets/Recursive.ttf'
+  'assets/1121.cur'
 ];
 
 self.addEventListener('install', function(event) {

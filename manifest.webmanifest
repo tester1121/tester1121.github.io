@@ -1,0 +1,31 @@
+{
+  "short_name": "tester1121",
+  "name": "tester1121's Website",
+  "description": "The website of tester1121.",
+  "icons": [
+    {
+      "src": "/icons/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable.png",
+      "type": "image/png",
+      "sizes": "301x301",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#00CBCC",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#00CBCC",
+  "shortcuts": []
+}

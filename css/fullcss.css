@@ -97,6 +97,7 @@ body .gen {
 html, body {
   margin: 0;
   padding: 0;
+  background: url("assets/background.png");
 }
 
 html body .gen {

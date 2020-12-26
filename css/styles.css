@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Recursive;
+  src: url(assets/Recursive.ttf);
+}
+
 * {
   box-sizing: border-box;
   cursor: url(assets/1121.cur), default;

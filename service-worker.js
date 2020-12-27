@@ -14,6 +14,7 @@ var urlsToCache = [
   '/service-worker.js',
   '/social.html',
   '/assets/1121.cur',
+  '/assets/1121-select.cur',
   '/assets/background.png',
   '/icons/512x512.png',
   '/icons/apple-touch.png',
@@ -27,14 +28,14 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      return cache.addAll(urlsToCache { cache: "reload"});
+      return cache.addAll(urlsToCache, { cache: "reload"});
       // await cache.add(new Request(URL_1, { cache: "reload" }));
 
       // Setting {cache: 'reload'} in the new request will ensure that the
       // response isn't fulfilled from the HTTP cache; i.e., it will be from
       // the network.
       await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
-    })()
+    })
   );
   // Force the waiting service worker to become the active service worker.
   self.skipWaiting();

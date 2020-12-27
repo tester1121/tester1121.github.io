@@ -15,6 +15,7 @@ var urlsToCache = [
   '/social.html',
   '/assets/1121.cur',
   '/assets/1121-select.cur',
+  '/assets/1121-copy.cur',
   '/assets/background.png',
   '/icons/512x512.png',
   '/icons/apple-touch.png',

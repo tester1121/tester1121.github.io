@@ -2,8 +2,11 @@
 
 Hello, and welcome to my website's repository!
 
-Website status: 
-```
-Downloads page: In development
-Other pages: Online
+Website status:
+```diff
++ ONLINE
++ ALL PAGES ACTIVE
++ SERVICE WORKER ACTIVE
+@@ MANIFEST NOT WORKING @@
+- SAFARI ADD-TO-HOME-SCREEN BUTTON/INSTRUCTIONS
 ```

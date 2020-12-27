@@ -19,14 +19,15 @@ var urlsToCache = [
   '/icons/apple-touch.png',
   '/icons/favicon.ico',
   '/icons/favicon.png',
-  '/icons/maskable.png'
+  '/icons/maskable.png',
+  '/Recursive.ttf'
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      return cache.addAll(urlsToCache, { cache: "reload" });
+      return cache.addAll(urlsToCache);
       // await cache.add(new Request(URL_1, { cache: "reload" }));
 
       // Setting {cache: 'reload'} in the new request will ensure that the

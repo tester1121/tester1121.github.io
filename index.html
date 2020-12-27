@@ -10,11 +10,11 @@
     <meta name="keywords" content="tester1121">
     <meta name="author" content="tester1121">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet"> -->
     <link href="css/github.css" rel="stylesheet">
     <meta name="theme-color" content="#00cbcc"/>
     <link rel="manifest" href="/manifest.webmanifest">
     <meta http-equiv="Cache-control" content="max-age=25200">
+    <meta http-equiv="Cache-control" content="public">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="tester1121">
@@ -127,6 +127,14 @@
         src: url(/Recursive.ttf) format('truetype');
       }
 
+      @font-face {
+        font-family: 'Recursive';
+        font-style: normal;
+        font-weight: 300, 400, 600, 800;
+        font-display: swap;
+        src: url(/Recursive.ttf) format('truetype');
+      }
+
       * {
       box-sizing: border-box;
       cursor: url(assets/1121.cur), default;
@@ -173,22 +181,18 @@
       .gen footer a {
         color: blue;
       }
-
-      /* Fonts */
-
-      400, 600, 800
-
     </style>
   </head>
   <body>
     <div class="gen">
         <nav>
-          <button> ☰ <!-- Font Awesome bars: <i class="fas fa-bars"></i> --></button>
+          <button> ☰ </button>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="server">1121's Discord Server</a></li>
             <li><a href="social">Social Media</a></li>
             <li><a href="about">About</a></li>
+            <li><a href="install">Web App</a></li>
         </ul>
       </nav>
       <div class="text">
@@ -204,47 +208,20 @@
           });
         });
         </script>
-        <script type="module">
-        /* Key response code */
-        import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
-        for (const el of document.querySelectorAll('[data-hotkey]')) {
-          install(el)
-        }
-        </script>
         <script>
           window.addEventListener("load", () => {
             if ("serviceWorker" in navigator) {
               navigator.serviceWorker.register("service-worker.js");
             }
           });
-
-          var deferredPrompt;
-          window.addEventListener(
-            'beforeinstallprompt', function (e) {
-              deferredPrompt = e;
-            });
-
-          function addToHomeScreen() {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then(function(choiceResult){
-              if (choiceResult.outcome === 'accepted') {
-                console.log('User accepted the A2HS prompt');
-              } else {
-                console.log('User dismissed the A2HS prompt');
-              } deferredPrompt = null;
-            });
-          }
         </script>
           <footer>
-            <p style="font-size: 29px; font-weight: 800;"><a style="text-decoration: underline; color: black;" onclick="addToHomeScreen()">Install the app!</a></p>
-            <p> </p>
             <p style="font-size: 25px; font-weight: 600;">Find me at:</p>
             <p>Discord: 1121#1063</p>
             <p>Youtube: <code>PRIVATE</code></p>
             <p>GitHub: <a href="https://github.com/tester1121">@tester1121</a></p>
             <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
             <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
-            <!-- Why am I doing this... -->
             <p> </p>
             <p> </p>
             <img src="https://profile-counter.glitch.me/tester1121/count.svg" alt="View Counter">

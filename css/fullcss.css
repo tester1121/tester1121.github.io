@@ -89,6 +89,14 @@ body .gen {
 
 /* General */
 
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 300, 400, 600, 800;
+  font-display: swap;
+  src: url(/Recursive.ttf) format('truetype');
+}
+
 * {
   box-sizing: border-box;
   cursor: url(assets/1121.cur), default;

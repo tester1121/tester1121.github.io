@@ -113,6 +113,14 @@
 
       /* General */
 
+      @font-face {
+        font-family: 'Recursive';
+        font-style: normal;
+        font-weight: 300, 400, 600, 800;
+        font-display: swap;
+        src: url(/Recursive.ttf) format('truetype');
+      }
+
       * {
       box-sizing: border-box;
       cursor: url(assets/1121.cur), default;
@@ -172,6 +180,7 @@
         <li><a href="downloads">Downloads</a></li>
         <li><a href="#">Social Media</a></li>
         <li><a href="about">About</a></li>
+        <li><a href="install">Web App</a></li>
       </ul>
     </nav>
     <div class="text">
@@ -190,19 +199,12 @@
         });
       });
     </script>
-    <script type="module">
-      /* Key response code */
-      import {install} from 'https://unpkg.com/@github/hotkey@latest?module'
-      for (const el of document.querySelectorAll('[data-hotkey]')) {
-        install(el)
-      }
-      </script>
-      <script>
-        window.addEventListener("load", () => {
-          if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-          }
-        });
+    <script>
+      window.addEventListener("load", () => {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("service-worker.js");
+        }
+      });
     </script>
     <footer>
       <p style="font-size: 25px; font-weight: 600;">Find me at:</p>

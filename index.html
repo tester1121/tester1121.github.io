@@ -10,7 +10,7 @@
     <meta name="keywords" content="tester1121">
     <meta name="author" content="tester1121">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600;800;900&display=swap" rel="stylesheet"> -->
     <link href="css/github.css" rel="stylesheet">
     <meta name="theme-color" content="#00cbcc"/>
     <link rel="manifest" href="/manifest.webmanifest">
@@ -119,6 +119,14 @@
 
       /* General */
 
+      @font-face {
+        font-family: 'Recursive';
+        font-style: normal;
+        font-weight: 300, 400, 600, 800;
+        font-display: swap;
+        src: url(/Recursive.ttf) format('truetype');
+      }
+
       * {
       box-sizing: border-box;
       cursor: url(assets/1121.cur), default;
@@ -131,7 +139,7 @@
       }
 
       html body .gen {
-        font-family: 'Recursive', sans-serif;
+        font-family: 'Recursive', normal;
         color: #000000;
         background: url("assets/background.png");
         text-align: center;
@@ -165,6 +173,10 @@
       .gen footer a {
         color: blue;
       }
+
+      /* Fonts */
+
+      400, 600, 800
 
     </style>
   </head>
@@ -233,7 +245,6 @@
             <p>GitHub: <a href="https://github.com/tester1121">@tester1121</a></p>
             <p>Twitch: <a href="https://twitch.tv/tester11210">tester11210</a></p>
             <p>Website status: <code>Online.</code></p>
-            <p>Last updated on <code>July 28, 2020.</code></p>
             <p>Made and maintained by <a href="https://github.com/tester1121">@tester1121</a>
             <!-- Why am I doing this... -->
             <p> </p>

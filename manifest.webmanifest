@@ -27,5 +27,43 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#00CBCC",
-  "shortcuts": []
+  "shortcuts": [
+    {
+      "name": "1121's Discord Server",
+      "short_name": "Discord Server",
+      "description": "Join tester1121's/1121's Discord server.",
+      "url": "/server",
+      "icons": [
+        {
+          "src": "/icons/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Social Media",
+      "short_name": "Social Media",
+      "description": "tester1121's Social Media",
+      "url": "/social",
+      "icons": [
+        {
+          "src": "/icons/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "About tester1121",
+      "short_name": "About",
+      "description": "About tester1121.",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "/icons/favicon.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+  ]
 }

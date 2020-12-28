@@ -3,27 +3,6 @@
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
 const OFFLINE_URL = "offline.html";
-var urlsToCache = [
-  '/',
-  '/index.html',
-  '/404.html',
-  '/about.html',
-  '/manifest.webmanifest',
-  '/offline.html',
-  '/server.html',
-  '/service-worker.js',
-  '/social.html',
-  '/assets/1121.cur',
-  '/assets/1121-select.cur',
-  '/assets/1121-copy.cur',
-  '/assets/background.png',
-  '/icons/512x512.png',
-  '/icons/apple-touch.png',
-  '/icons/favicon.ico',
-  '/icons/favicon.png',
-  '/icons/maskable.png',
-  '/Recursive.ttf'
-];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

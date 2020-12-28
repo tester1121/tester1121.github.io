@@ -26,8 +26,5 @@
   "background_color": "#00CBCC",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#00CBCC",
-  "shortcuts": []
-    }
-  ]
+  "theme_color": "#00CBCC"
 }
